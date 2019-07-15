@@ -44,6 +44,11 @@ for(i=0;i<allEmptyFieldsArray.length;i++){
         document.querySelector("#hiddenAlert").style.visibility = "initial";
         document.querySelector("#hiddenAlert").innerHTML = "Make sure postal code has 5 charachters";
   }
+  //if state field was selected
+    else if (document.querySelector("#exampleFormControlSelect1").value!== defaultStatus){
+        document.querySelector("#hiddenAlert").style.visibility = "initial";
+        document.querySelector("#hiddenAlert").innerHTML = "Pick a state";
+  }
 
     else  {
         hideAlert();
