@@ -30,9 +30,9 @@ for(i=0;i<allEmptyFieldsArray.length;i++){
         document.querySelector("#hiddenAlert").innerHTML = "Please, make sure it has a string value";
   }
   //if card field has 16 characters
-    else if (typeof allStringsArray[i].value!== "string"){
+    else if (document.querySelector("#card").value.length!==16){
         document.querySelector("#hiddenAlert").style.visibility = "initial";
-        document.querySelector("#hiddenAlert").innerHTML = "Please, make sure it has a string value";
+        document.querySelector("#hiddenAlert").innerHTML = "Make sure card has 16 charachters";
   }
 
     else  {
