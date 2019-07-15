@@ -34,6 +34,11 @@ for(i=0;i<allEmptyFieldsArray.length;i++){
         document.querySelector("#hiddenAlert").style.visibility = "initial";
         document.querySelector("#hiddenAlert").innerHTML = "Make sure card has 16 charachters";
   }
+  //if cvc field has 4 characters
+    else if (document.querySelector("#cvc").value.length!==4){
+        document.querySelector("#hiddenAlert").style.visibility = "initial";
+        document.querySelector("#hiddenAlert").innerHTML = "Make sure cvc has 4 charachters";
+  }
 
     else  {
         hideAlert();
