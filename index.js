@@ -39,6 +39,11 @@ for(i=0;i<allEmptyFieldsArray.length;i++){
         document.querySelector("#hiddenAlert").style.visibility = "initial";
         document.querySelector("#hiddenAlert").innerHTML = "Make sure cvc has 4 charachters";
   }
+  //if postal code field has 5 characters
+    else if (document.querySelector("#postal").value.length!==5){
+        document.querySelector("#hiddenAlert").style.visibility = "initial";
+        document.querySelector("#hiddenAlert").innerHTML = "Make sure postal code has 5 charachters";
+  }
 
     else  {
         hideAlert();
